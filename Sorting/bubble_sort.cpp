@@ -1,7 +1,9 @@
+// bubble sort implementation
 #include<bits/stdc++.h>
 
 using namespace std;
 
+// returns a vector of sorted elements
 vector<int> bubble_sort(vector<int> ara) {
 
     int n = ara.size() - 1; // because array index starts from zero
@@ -10,11 +12,10 @@ vector<int> bubble_sort(vector<int> ara) {
         int ptr = 0;
         while(ptr < n-i) {
             if(ara[ptr] > ara[ptr+1]) {
-                cout<<ara[ptr]<<" "<<ara[ptr+1]<<endl;
+                //cout<<"Before: "<<ara[ptr]<<" "<<ara[ptr+1]<<endl;
                 swap(ara[ptr], ara[ptr+1]);
-                cout<<ara[ptr]<<" "<<ara[ptr+1]<<endl;
+                //cout<<"After: "<<ara[ptr]<<" "<<ara[ptr+1]<<endl;
             }
-
             ptr++;
         }
     }
