@@ -171,7 +171,7 @@ int main() {
     add_root_node(item);
 
 
-    cout<<endl<<"Enter below numeric value for listed stack operation\n\n";
+    cout<<endl<<"Enter below numeric value for listed operation\n\n";
 
     while(1) {
 
